@@ -7,7 +7,9 @@ const Index = () => {
         <title>Index Page</title>
       </Head>
 
-      <h1>ああああああああああ</h1>
+      <h1 className="text-red-500">
+        あああああああああああああああああああああああああああああああああああああああああ
+      </h1>
     </>
   );
 };
