@@ -6,10 +6,16 @@ const Index = () => {
       <Head>
         <title>Index Page</title>
       </Head>
-
-      <h1 className="text-red-500">
-        あああああああああああああああああああああああああああああああああああああああああ
-      </h1>
+      <div>
+        <div>
+          <div>
+            <h1 className="text-red-500">タイトル</h1>
+          </div>
+        </div>
+        <div>Reactの学習中</div>
+        <div>@ひこやん</div>
+        <button>削除</button>
+      </div>
     </>
   );
 };
