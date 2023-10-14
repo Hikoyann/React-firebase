@@ -2,14 +2,17 @@ import Head from "next/head";
 import { auth, provider } from "../utils/firebase";
 import { signInWithPopup } from "firebase/auth";
 import { useState } from "react";
+import { useRouter } from "next/router";
 
 const Login = () => {
+  const router = useRouter();
   const [isAuth, setIsAuth] = useState(false);
   const loginInWithGoogle = () => {
     // googlログイン
     signInWithPopup(auth, provider).then((result) => {
       localStorage.setItem("isAuth", true);
       setIsAuth(true);
+      router.push("/");
     });
   };
   return (
