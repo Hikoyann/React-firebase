@@ -1,6 +1,11 @@
 import Link from "next/link";
 
-const NAV_ITEMS = [{ href: "/", label: "Index" }];
+const NAV_ITEMS = [
+  { href: "/", label: "Home" },
+  { href: "/CreatePost", label: "CreatePost" },
+  { href: "/Login", label: "Login" },
+  { href: "/Logout", label: "Logout" },
+];
 
 export const Header = () => {
   return (
