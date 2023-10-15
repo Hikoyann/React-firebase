@@ -21,12 +21,13 @@ const Index = () => {
       <div>
         {postList.map((post) => {
           return (
-            <div>
+            <div key={post.id}>
               <div>
                 <h1 className="text-red-500">{post?.title}</h1>
               </div>
               <div>{post?.text}</div>
               <div>
+                <div>{post?.postText}</div>
                 <div>@{post?.author.username}</div>
                 <button>削除</button>
               </div>
