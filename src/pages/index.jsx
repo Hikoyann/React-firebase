@@ -28,7 +28,7 @@ const Index = () => {
               <div>{post?.text}</div>
               <div>
                 <div>{post?.postText}</div>
-                <div>@{post?.author.username}</div>
+                {/* <div>@{post?.author.username}</div> */}
                 <button>削除</button>
               </div>
             </div>
